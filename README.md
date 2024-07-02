@@ -26,3 +26,4 @@
 {"added":${added}}
 ```
 <h3 style="background-color:#ff0000;">구현</h3>
+<span style="color: red;">이것은 빨간색 텍스트입니다.</span>
