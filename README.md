@@ -25,4 +25,4 @@
 <c:set var="added" value="${dao.add(board)}"/>
 {"added":${added}}
 ```
-<div style="color:red;">구현</div>
+<h3>구현</h3>
