@@ -10,7 +10,7 @@
     - 2주: 게시판
     - 3주: 뉴스
 <a name="top"></a>  
-[code1](#code1)  
+1. [code1](#code1)  
 [code2](#code2)  
 [code3](#code3)  
 [code4](#code4)  
