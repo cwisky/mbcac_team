@@ -1,4 +1,3 @@
-
 # mbcac_team
 ## Windows에서 자격증명 확인 / github관련 자격증명 삭제
 
@@ -42,3 +41,6 @@
 * git status : 위에서 commit 한 정보가 확인되는지
 * git push origin main : 최종적으로 로컬 프로젝트를 원격 저장소(origin)의 main 브랜치에 병합한다
 * github.com에 접속하여 해당 파일의 내용이 변경되어 있는지 확인한다
+
+## Github Actions 테스트
+* 이 파일을 수정하면 이 리파지토리에 설정된 workflow가 시작되고 로그에 기록되는지 확인
