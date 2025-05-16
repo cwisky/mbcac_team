@@ -1,0 +1,17 @@
+name: Test GitHub Actions
+
+on:
+  push:           # 어떤 브랜치든 push 되면 실행
+    branches:
+      - "**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checkout@v3
+
+      - name: 확인 메시지 출력
+        run: echo "🎉 GitHub Actions가 잘 작동하고 있습니다!"
