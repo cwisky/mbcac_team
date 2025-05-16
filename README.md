@@ -43,4 +43,31 @@
 * github.com에 접속하여 해당 파일의 내용이 변경되어 있는지 확인한다
 
 ## Github Actions 테스트
+* Github Actions는 Github의 리파지토리에 올려진 프로젝트가 변경시 자동으로 해당 리파지토리의 .github/workflow/*.yml 파일에 정의된 작업이 자동으로 실행된다
+* 리파지토리의 .github/workflow/*.yml은 표준으로 따라야 하며 *.yml 안에 정의된 빌드, 테트, 배포 작업이 수행되는 것이다
+* 현재 리파지토리 루트에 .github 디렉토리 생성 > .github안에 workflow 디렉토리 생성 > workflow 안에 sample.yml 생성
+* sample.yml 에 아래의 내용 입력
+```yml
+name: Test GitHub Actions
+
+on:
+  push:           # 어떤 브랜치든 push 되면 실행
+    branches:
+      - "**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checkout@v3
+
+      - name: 확인 메시지 출력
+        run: echo "🎉 GitHub Actions가 잘 작동하고 있습니다!"
+```
 * 이 파일을 수정하면 이 리파지토리에 설정된 workflow가 시작되고 로그에 기록되는지 확인
+* Actions > 표시된 workflow 중 최근 실행된 workflow 클릭 > 해당 yml 아래의 Job 클릭 > "확인 메시지 출력" > yml에서 echo 명령으로 출력한 메시지 확인
+
+## Github Actions에서 사용되는 yml 작성법
+
