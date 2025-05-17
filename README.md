@@ -46,7 +46,8 @@
 * Github Actions는 Github의 리파지토리에 올려진 프로젝트가 변경시 자동으로 해당 리파지토리의 .github/workflow/*.yml 파일에 정의된 작업이 자동으로 실행된다
 * 리파지토리의 .github/workflow/*.yml은 표준으로 따라야 하며 *.yml 안에 정의된 빌드, 테트, 배포 작업이 수행되는 것이다
 * 현재 리파지토리 루트에 .github 디렉토리 생성 > .github안에 workflow 디렉토리 생성 > workflow 안에 sample.yml 생성
-* sample.yml 에 아래의 내용 입력
+* sample.yml 에 아래의 내용 입력(빈 라인은 무의미, 들여쓰기 문법, "키:값" 형식이 아니어도 됨, "-" 는 리스트 아이템, 아이템 한개는 다수개 속성도 가능)
+  + 키:값은 한줄로 가능하며 줄바꿈할 때는 들여쓰기함. 단일 값은 한줄로 쓰는 것이 가장 안전함
 ```yml
 name: Test GitHub Actions
 
